@@ -1,0 +1,257 @@
+/* 16.05.2013 ajout niouzes en home */
+#niouze
+{
+padding: 0px 0px;
+}
+body {
+/* font: 9pt verdana;  */
+font: 10pt verdana; /* augmenté 2014.02.03 */
+margin: 0;
+padding: 0;
+/*background-color: #EFFBF8; /* color derriere le site */
+/* background-image: url(img/socle/avatar_choucas.jpg); */
+}
+img {
+border:none;
+}
+#conteneur {
+margin-left: auto;
+margin-right: auto;
+width: 940px;
+border: 1px dotted #D4BBAB;    
+background-color:white; /* sinon prend color de body */
+}
+#haut {
+  height:90px;
+  overflow: auto;
+  background:#A1946A;
+}
+#haut_logo {
+  position:absolute;
+  margin-left:5px;
+  margin-top:5px;
+}
+#haut_banniere {
+  position:absolute;
+  margin-left:250px;  
+  margin-top:10px;
+  height: 60px;
+  width:468px; 
+  text-align:center;
+}
+#haut_droite {
+  position:absolute;
+  margin-left:730px;
+  margin-top:20px;
+  font-size: 8pt; /* police réduite */
+  text-align:center;
+}
+
+/*travaux menu 30.12.2008 http://css.alsacreations.com/Construction-de-menus-en-CSS/Creer-des-menus-simples-en-CSS#menuhorizontal*/
+#menu {
+margin: 0 ;
+	padding: 0 ;
+	list-style: none ;
+	text-align: center ;
+	background: #A1946A;
+	height:25px;
+}
+#menu li {
+display: inline ;
+	margin-right: 1px ;
+	/*color: green ;*/
+	/*background: white ;*/
+	}
+#menu li a {
+	padding: 2px 10px ; /* ~auteur case, ~largeur case: */
+	background: #A1946A ;
+	color: #fff ;
+	border:none;
+	text-align: center ;
+	text-decoration: none ;
+	}
+#menu li a:hover {
+	background: #D4BBAB ;
+	text-decoration: none;
+	color: #A1946A;
+    border-radius:3px;
+}
+#menu li #navigation li a:focus, #navigation li a:active {
+	background: #D4BBAB ;
+	text-decoration: none ;
+	}	
+/*travaux menu 30.12.2008 http://css.alsacreations.com/Construction-de-menus-en-CSS/Creer-des-menus-simples-en-CSS#menuhorizontal*/
+
+a:link {
+	color: #A1946A;
+	text-decoration: none;
+}
+a:visited {
+	color: #A1946A;
+	text-decoration: none;
+}
+a:hover {
+	color: green;
+	text-decoration: underline;
+}
+a:active {
+	color: green;
+	text-decoration: none;
+}
+
+#bas {
+padding:5px;
+/*height:35px;*/
+height:55px;
+/*background-color:#D4BBAB;*/
+background:#A1946A; /* idem que haut */
+}
+.bas_tiers {
+float:left;
+width: 32%;
+font-size: 8pt;
+text-align:center;
+}
+#bas a {
+color:white;
+text-decoration: none ;
+}
+#bas a:hover {
+background-color:#D4BBAB;
+    border-radius:3px;
+text-decoration: none ;
+}
+hr {
+/* http://romy.tetue.net/spip.php?article239 */
+height: 1px;
+background-color: #A1946A;
+border: none;
+}
+
+#bloc50un { /* les blocs 50% doivent etre uniques (id) !! */
+float:left;
+width: 48%;
+margin: 5px;
+}
+#bloc50deux { /* les blocs 50% doivent etre uniques (id) !! */
+float:left;
+width: 48%;
+margin: 5px;
+}
+#bloc100 {
+float:left;
+width: 98%;
+margin: 5px;
+}
+.blocindex {
+float:left;
+width: 98%;
+margin: 5px;
+}
+#bloc70 {
+float:left;
+width: 68%;
+margin: 5px;
+}
+#bloc30 {
+float:left;
+width: 29%;
+margin: 5px;
+}
+/* ajout 20141013 */
+#bloc80 {
+float:left;
+width: 78%;
+margin: 5px;
+}
+#bloc20 {
+float:left;
+width: 19%;
+margin: 5px;
+}
+/* ************** */
+h1 { /* titre des rubriques en Home 20150428 pour ameliorer referenecement*/
+font:bold;
+    background-color: #D2C074;
+    color: #165A78;
+    border-radius:3px;
+    padding:4px;
+	font-size: 12px;
+}
+h4 { /* titre des rubriques en Home */
+/*color: #A1946A;*/
+font:bold;
+    /*background: #A1946A; *//* idem que HAUT*/
+    /*background:#D4BBAB;      /* idem que BAS */
+    background-color: #D2C074;
+    color: #165A78;
+    border-radius:3px;
+    padding:4px;
+}
+h5 { /* sous titre des BDzoom */
+    background-color: #D4BBAB;
+    color: #165A78;
+    border-radius:3px;
+    padding:2px;
+}
+h3 { /* pour les classements */
+    background-color: #D4BBAB;
+    color: #165A78;
+    border-radius:3px;
+    padding:2px;
+}
+p {
+  margin: .75em 0; /* Marges plus faibles que par défaut. (7) */
+}
+#clz { /* pour annuler le float qd plusieurs blocs */
+clear:left;
+}
+.clzindex { /* pour annuler le float qd plusieurs blocs sur index.php 20150428*/
+clear:left;
+}
+.retourligne { /* class pour pouvoir repeter */
+clear:left;
+}
+
+.vignette { /* de type class car non unique sur la même page !! */
+float:left; /* pour mettre la vignette à gauche et le texte à droite autour*/ 
+/*padding-right:15px;*/
+margin-right: 10px;
+box-shadow:5px 5px 5px #A1946A; /* ombre http://www.westciv.com/tools/boxshadows/index.html 20140204 */
+}
+#publie { /* pour la date de chronique album.php */
+	margin: 20px 0;
+	font-size: .85em;
+        font-style: italic;
+        text-align: right;
+}
+#navigation { /* navigation sur album.php */
+/*	margin: 20px 0;*/
+	font-size: .85em;
+	text-align: center;
+}
+.inputtxt_rond{ /* pour arrondir les zones de texte CONTACT.PHP */
+        border-radius:3px;  /*augmenter pour + arrondi*/
+}
+.inputsub_rond {/*pour arrondir les boutons submit CONTACT.PHP */
+        border-radius:3px;
+}
+/* ajout ministrap */
+.polaroid {
+  display: inline-block;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+}
+.polaroid img {
+  margin: 10px 10px 0 10px;
+  /*-webkit-filter: sepia(0.5) contrast(1.2);  ???????????????? */
+}
+.polaroid figcaption {
+  color: #777;
+  text-align: center;
+  margin-bottom: 10px;
+  /*font-family: cursive;
+  font-size: 14px;
+  letter-spacing: -1px;*/
+}
